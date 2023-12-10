@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+     <div class="main-container">
+
+        <div class="container-title">
+            <h2 class="Hello"> Здравствуйте! меня зовут </h2>
+        </div>
+
+        <div class="container">
+            <h1 class="name"> Грязнова Анастасия</h1>
+            <img src="img\IMG_1064.jpg" width="350 px"
+                height="450 px">
+        </div>
+
+        <div>
+            <h3 class="about-me"> я проживаю в городе Москва </h2>
+        </div>
+
+        <div>
+            <h3 class="about-me"> моя работа связана с банковской сферой </h3>
+            <h3 class="about-me"> мое хобби сноуборд</h3>
+        </div>
+        <div>
+            <h4> контактная информация </h4>
+            <h4>
+                <a href="mail.ru"> gryaznovanastya@mail.ru </a>
+            </h4>
+        </div>
+
+        <div>
+            <h2>
+                <b> я бы хотела посетить такие города как </b>
+            </h2>
+        </div>
+
+        <div class="about-container">
+            <h3>
+                <a href="https://ru.wikipedia.org/wiki/Нью-Йорк"> Нью-йорк </a>
+            </h3>
+            <h3>
+                <a href="https://ru.wikipedia.org/wiki/Париж"> Париж </a>
+            </h3>
+            <h3>
+                <a href="https://ru.wikipedia.org/wiki/Сингапур"> Сингапур </a>
+            </h3>
+        </div>
+
+        <div class="flex-container">
+            <div>
+                <img class="image" src="https://tripmydream.cc/travelhub/travel/blocks/14/5241/block_145241.jpg?v1"
+                    width="350 px" height="250 px">
+            </div>
+            <div>
+                <img class="image" src="https://s0.rbk.ru/v6_top_pics/media/img/0/78/756684293671780.jpg" width="350 px"
+                    height="250 px">
+            </div>
+            <div>
+                <img class="image"
+                    src="https://img.gazeta.ru/files3/940/17494940/shutterstock_748173625-pic_32ratio_1200x800-1200x800-36364.jpg"
+                    width="350 px" height="250 px">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        alert ("hello");
+        console.log ("это консоль разраба");
+        console.log (100-5);
+        console.log ("вино"+"град");
+        console.log ( `${2+5} раз отмерь`);
+        console.log (`это шаблонная строка и она может
+        содержать несколько строк`);
+
+        let sum = 10 + 5;
+        console.log (sum); //15
+        sum = 1 + 3;
+        console.log (sum); //4
+
+        let stocPrice = 700;
+        if (stocPrice > 900) {
+           console.log ("продавай скорее");
+        } else if (stocPrice === 500) {
+           console.log ('не торопись');   
+        } else {
+            console.log ("не продавай");
+        }
+
+
+
+        let month = ["Январь", 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль'];
+         console.log(month[3]); //апрель
+         console.log(month.length);//7
+         console.log(month[month.lenght - 1]);
+
+
+         let number = 5;
+
+         while (number<10){
+            console.log(number);
+            number=number + 2;
+         }
+
+
+         //объекты ,пример карточка клиента 
+
+         let userInfo = {
+            name:'Anastasia',
+            lastname: 'Gryaznova',
+            age: 38,
+            address: 'Moscow',
+         }
+
+         console.log(userInfo.name, userInfo.address, userInfo['age']);
+
+         //функции 
+
+         function keepScore (our, their) {
+            if (our > their) {
+                console.log( 'Выиграли!');
+
+            } else if (our === their){
+                console.log('Ничья!');
+
+            } else {
+                console.log('Продули!');
+            }
+         }
+
+         keepScore (7, 8);
+    
+    </script>
+
+
+</body>
+
+</html>
+
+
+
